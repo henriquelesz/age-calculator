@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div id="inputs">
+        <div>
+          <label for="year">YEAR</label>
+          <input
+            type="number"
+            name="year"
+            id="year"
+            placeholder="YYYY"
+            max="2024"
+          />
+        </div>
+
+        <div>
+          <label for="month">MONTH</label>
+          <input
+            type="number"
+            name="month"
+            id="month"
+            placeholder="MM"
+            max="12"
+          />
+        </div>
+        <div>
+          <label for="day">DAY</label>
+          <input type="number" name="day" id="day" placeholder="DD" max="31" />
+        </div>
+      </div>
+      <span id="diviser">
+        <span id="img">
+          <img src="assets/images/icon-arrow.svg" alt="" />
+        </span>
+      </span>
+      <div id="results">
+        <div class="result">
+          <span id="yearOut">--</span>
+          <span>years</span>
+        </div>
+        <div class="result">
+          <span id="monthOut">--</span>
+          <span>months</span>
+        </div>
+        <div class="result">
+          <span id="dayOut">--</span>
+          <span>days</span>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
